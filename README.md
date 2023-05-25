@@ -1,8 +1,24 @@
 # IoT_Project
 
-IoT Project for smart wheel chair
+## IoT Project for smart wheel chair
 
 Project Proposal Pdf: https://drive.google.com/file/d/1s-WYFCCCdyZgRIBFCH1jqkCSqAqGo34y/view?usp=sharing
+
+
+ ```
+ Thing Speak Account details: 
+ 
+ 1. Write API Key : PMNG1L5KT0RUA91H
+ 2. Read API Key : 6CY1XXX88DYVP0PV
+ 3. Channel ID: 2160276
+ 4. Author: mwa0000030169550
+ 5. Access: Private
+ 6. User ID: kevin.thakkar@students.iiit.ac.in
+ 7. Password:  hiKevin@123
+ 8. SJGJJ12DR2RZVE3Y
+ 
+ 
+ ```
 
 
 
@@ -30,6 +46,7 @@ Directory structure
 ├── templates
 │   └── home.html
 └── wheelchair.db
+
 
 ```
 
