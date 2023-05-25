@@ -2,9 +2,17 @@
 
 IoT Project for smart wheel chair
 
+Project Proposal Pdf: https://drive.google.com/file/d/1s-WYFCCCdyZgRIBFCH1jqkCSqAqGo34y/view?usp=sharing
+
+
+
+
+
 
 
 ```
+Directory structure
+
 ├── app.py
 ├── README.md
 ├── sensor_codes
