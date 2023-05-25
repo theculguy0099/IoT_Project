@@ -1,7 +1,10 @@
 # IoT_Project
 
 IoT Project for smart wheel chair
-"""
+
+
+
+```
 ├── app.py
 ├── README.md
 ├── sensor_codes
@@ -20,6 +23,6 @@ IoT Project for smart wheel chair
 │   └── home.html
 └── wheelchair.db
 
-"""
+```
 
 4 directories, 13 files
