@@ -5,6 +5,15 @@
 Project Proposal Pdf: https://drive.google.com/file/d/1s-WYFCCCdyZgRIBFCH1jqkCSqAqGo34y/view?usp=sharing
 
 
+``` 
+How to open the website:
+1. clone the repo
+2. Go to frontend folder
+3. open terminal, enter command: npm i 
+4. then enter command: npm run dev 
+5. Go through the link given in the terminal. 
+```
+
  ```
  Thing Speak Account details: 
  
