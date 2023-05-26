@@ -247,41 +247,44 @@ function Home() {
 
             {/* Here We can change to the componenets form so that we can view the code clearly */}
 
-
+          </div>
+              {/* Upto Here the content of the page done  */}
 
 
             {/* Start of the graphs section */}
 
             {/* First column starts */}
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid md:grid-cols-2 gap-12 p-20">
               <PirReadings />
               <UltrasonicReadings />
             </div>
             {/* First column ends */}
 
-
-
             {/* Second column starts */}
-            <div className="grid md:grid-cols-2 gap-20 p-10">
+          
+            <div className="flex  text-center items-center justify-center">
+              <AccelarationReadings />
+              </div>
+            
+            {/* Second column ends */}
+
+            {/* Third column starts */}
+            <div className="grid md:grid-cols-2 gap-12 p-20">
               <HeartrateReadings />
               <GyroscopeReadings />
             </div>
-            {/* Second column ends */}
-
-
-            {/* Third column starts */}
-            <div className="grid gap-20 p-10">
-              <AccelarationReadings />
-            </div>
             {/* Third column ends */}
 
+
+            
+
             {/* End of the graphs section */}
-            <div>
+            <div className="flex justify-center text-center items-center p-40">
               <Bar options={options} data={data} />
             </div>
 
             <br /><br /><br /><br /><br /><br /><br />
-          </div>
+          
         </section>
 
       </main>
