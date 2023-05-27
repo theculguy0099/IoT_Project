@@ -13,6 +13,7 @@ import PirSensor from "./pages/PirSensor";
 import HeartRate from "./pages/HeartRate";
 import Gyroscope from "./pages/Gyroscope";
 import Accelometer from "./pages/Accelometer";
+import AboutProject from "./pages/AboutProject";
 
 function App() {
   const location = useLocation();
@@ -43,7 +44,7 @@ function App() {
         <Route exact path={`${basePath}/accelometer`} element={<Accelometer />} />
         <Route exact path={`${basePath}/pirreading`} element={<PirSensor />} />
         <Route exact path={`${basePath}/ultrasonic`} element={<UltrasonicSensor />} />
-
+        <Route exact path={`${basePath}/aboutpage`} element={<AboutProject />} />
 
       </Routes>
     </>
