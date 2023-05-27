@@ -89,7 +89,7 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li><Link to={`${basePath}/heartrate`}>About project</Link></li>
+              <li><Link to={`${basePath}/aboutpage`}>About project</Link></li>
             </ul>
           </nav>
         </div>
