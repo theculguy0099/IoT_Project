@@ -7,6 +7,7 @@ Project Proposal Pdf: https://drive.google.com/file/d/1s-WYFCCCdyZgRIBFCH1jqkCSq
 
 ``` 
 How to open the website:
+To run the website you need to install npm and node. 
 1. clone the repo
 2. Go to frontend folder
 3. open terminal, enter command: npm i 
