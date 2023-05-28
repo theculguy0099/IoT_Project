@@ -4,6 +4,8 @@ import axios from "axios";
 
 import logoImage from '../images/wheelchairlogo.png';
 
+
+
 function Header() {
   const [top, setTop] = useState(true);
   const [signedIn, setSignedIn] = useState(false);
@@ -67,15 +69,10 @@ function Header() {
         !top && "bg-white backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-6">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 bg-sky-100">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
-          <div className="flex-shrink-0 mr-4">
-            {/* Logo */}
-            <Link to={basePath} className="block" aria-label="Cruip">
-              <img src={logoImage} width="80" className="d-inline-block align-top" alt="Wheel chair logo "></img>
-            </Link>
-          </div>
+       
 
           <Link to={basePath} className="block" aria-label="Cruip">
             <div className="text-center text-xl md:text-5xl font-extrabold tracking-tighter
@@ -87,9 +84,9 @@ function Header() {
           </Link>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li><Link to={`${basePath}/aboutpage`}>About project</Link></li>
+          <nav className="flex flex-grow ">
+            <ul className="flex flex-grow justify-end flex-wrap items-center ">
+              <li ><Link to={`${basePath}/aboutpage`}>About project</Link></li>
             </ul>
           </nav>
         </div>
