@@ -8,22 +8,30 @@ import { Link, useLocation } from 'react-router-dom';
 function HeartrateReadings() {
     const basePath = import.meta.env.BASE_URL;
 
-    const [field1Value, setField1Value] = useState('');
+    const [heartRateInBeats, setHeartBeat] = useState(''); 
+
+    const iframeStyle = {
+        width: '450px',
+        height: '260px',
+        border: '1px solid #cccccc'
+    };
 
 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://api.thingspeak.com/channels/2151504/feeds.json?api_key=J1QY6F6F16CGF1L1');
+                const response = await fetch('https://api.thingspeak.com/channels/2165919/fields/1.json?api_key=V5BSNS9HHDUCTTMP');
                 const jsonData = await response.json();
-                const fieldValue = jsonData.feeds[0].field1;
+                const fieldValue = jsonData;
                 // Data in json format looks like this we can view in console. 
                 console.log(jsonData);
                 // Checking in console.
-                console.log(fieldValue); 
+                const Latest_value_of_heartRate = fieldValue.feeds[0].field1;
+                console.log(fieldValue.feeds[0].field1); 
                 // Assigning the value to field1 variable. 
-                setField1Value(fieldValue);
+                setHeartBeat(Latest_value_of_heartRate);
+                console.log(heartRateInBeats);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -33,7 +41,7 @@ function HeartrateReadings() {
     }, []);
 
     // Checking in console. 
-    console.log(field1Value);
+    //console.log(heartRateInBeats);
 
     return (
 
@@ -42,19 +50,13 @@ function HeartrateReadings() {
 
            
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400">
-                Heart Rate Readings: {field1Value}
+                Heart Rate Readings
             </div>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400">
 
                 {/* Graph code here  */}
+                <iframe style={iframeStyle}  src="https://thingspeak.com/channels/2165919/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 
-            </div>
-            <div className="w:full">
-                <Link to={`${basePath}/heartrate`}>
-                    <button className="btn text-white bg-gray-900 hover:bg-gray-700">
-                        More details
-                    </button>
-                </Link>
             </div>
         </div>
     );

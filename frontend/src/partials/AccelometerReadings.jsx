@@ -5,6 +5,12 @@ import { Link, useLocation } from 'react-router-dom';
 
 function AccelarationReadings() {
     const basePath = import.meta.env.BASE_URL;
+    const iframeStyle = {
+        width: '450px',
+        height: '260px',
+        border: '1px solid #cccccc'
+    };
+    
 
     return (
 
@@ -15,27 +21,17 @@ function AccelarationReadings() {
             </div>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400 flex flex-row">
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    X direction
+                    <iframe  style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    Y direction
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
                 <div>
-                    Z direction
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
             </div>
-            <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400">
-
-                {/* Graph code here  */}
-
-            </div>
-            <div className="w:full">
-                <Link to={`${basePath}/accelometer`}>
-                    <button className="btn text-white bg-gray-900 hover:bg-gray-700">
-                        More details
-                    </button>
-                </Link>
-            </div>
+           
+          
         </div>
     );
 }

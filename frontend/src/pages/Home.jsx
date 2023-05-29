@@ -4,13 +4,13 @@ import Footer from '../partials/Footer';
 
 import Modal from "../utils/Modal";
 
-import HeroImage from "../images/hero-image.png";
-import { Link } from "react-router-dom";
-import PirReadings from "../partials/PirReadings";
-import UltrasonicReadings from "../partials/UltrasonicReadings";
+import TemperatureReadings from "../partials/TemperatureReadings";
+import SpO2Readings from "../partials/SpO2Readings";
 import HeartrateReadings from "../partials/HeartrateReadings";
 import GyroscopeReadings from "../partials/GyroscopeReadings";
 import AccelarationReadings from "../partials/AccelometerReadings";
+import RotationsPerMinuteReadings from "../partials/RotationsPerMinute";
+import VelocityOfChairReadings from "../partials/VelocityOfChair";
 
 
 
@@ -256,33 +256,39 @@ function Home() {
 
             {/* First column starts */}
             <div className="grid md:grid-cols-2 gap-12 p-20">
-              <PirReadings />
-              <UltrasonicReadings />
+              <HeartrateReadings />
+              <SpO2Readings />
             </div>
             {/* First column ends */}
 
             {/* Second column starts */}
           
-            <div className="flex  text-center items-center justify-center">
+            <div className="flex  p-20">
               <AccelarationReadings />
               </div>
             
-            {/* Second column ends */}
+          {/* Second column ends */}
+          
 
-            {/* Third column starts */}
+          {/* Third column starts */}
+
+          <div className="flex  p-20">
+            <GyroscopeReadings />
+          </div>
+
+          {/* Third column ends */}
+
+            {/* Fourth column starts */}
             <div className="grid md:grid-cols-2 gap-12 p-20">
-              <HeartrateReadings />
-              <GyroscopeReadings />
+              <RotationsPerMinuteReadings />
+              <VelocityOfChairReadings />
             </div>
-            {/* Third column ends */}
+            {/* Fourth column ends */}
 
 
             
 
             {/* End of the graphs section */}
-            <div className="flex justify-center text-center items-center p-40">
-              <Bar options={options} data={data} />
-            </div>
 
             <br /><br /><br /><br /><br /><br /><br />
           
