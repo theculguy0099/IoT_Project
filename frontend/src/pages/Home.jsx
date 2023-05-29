@@ -279,9 +279,8 @@ function Home() {
           {/* Third column ends */}
 
             {/* Fourth column starts */}
-            <div className="grid md:grid-cols-2 gap-12 p-20">
-              <RotationsPerMinuteReadings />
-              <VelocityOfChairReadings />
+            <div className="flex justify-center items-center text-center p-20">
+              <TemperatureReadings />
             </div>
             {/* Fourth column ends */}
 
