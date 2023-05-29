@@ -90,7 +90,7 @@ function Home() {
 
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
 
       {/*  Site header */}
       <Header />

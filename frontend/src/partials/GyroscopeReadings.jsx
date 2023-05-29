@@ -15,7 +15,7 @@ function GyroscopeReadings() {
 
     return (
 
-        <div className="flex flex-col items-center text-center bg-blue-100 p-2 md:p-20" id="tasks_list">
+        <div className="flex flex-col items-center text-center bg-opacity-0 p-2 md:p-5" id="tasks_list">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5pJPqsCLO1eNrn19tkEidb8vaXfMLvx25f3QydLoug&usqp=CAU&ec=48665698"/>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400">
                 Gyroscope Readings
