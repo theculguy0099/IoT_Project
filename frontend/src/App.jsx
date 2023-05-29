@@ -8,12 +8,8 @@ import AOS from "aos";
 
 import Home from "./pages/Home";
 import NotFound from "./pages/404";
-import UltrasonicSensor from "./pages/UltrasonicSensor";
-import PirSensor from "./pages/PirSensor";
-import HeartRate from "./pages/HeartRate";
-import Gyroscope from "./pages/Gyroscope";
 import Accelometer from "./pages/Accelometer";
-import AboutProject from "./pages/AboutProject";
+import CollisionStop from "./pages/CollisonStop";
 
 function App() {
   const location = useLocation();
@@ -39,13 +35,8 @@ function App() {
       <Routes>
         <Route exact path={basePath} element={<Home />} />
         <Route exact path={`${basePath}/*`} element={<NotFound />} />
-        <Route exact path={`${basePath}/heartrate`} element={<HeartRate />} />
-        <Route exact path={`${basePath}/gyroscope`} element={<Gyroscope />} />
         <Route exact path={`${basePath}/accelometer`} element={<Accelometer />} />
-        <Route exact path={`${basePath}/pirreading`} element={<PirSensor />} />
-        <Route exact path={`${basePath}/ultrasonic`} element={<UltrasonicSensor />} />
-        <Route exact path={`${basePath}/aboutpage`} element={<AboutProject />} />
-
+        <Route exact path={`${basePath}/collision`} element={<CollisionStop />} />
       </Routes>
     </>
   );

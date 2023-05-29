@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
 
-import logoImage from '../images/wheelchairlogo.png';
 
 
 
@@ -85,8 +84,9 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow ">
-            <ul className="flex flex-grow justify-end flex-wrap items-center ">
-              <li ><Link to={`${basePath}/aboutpage`}>About project</Link></li>
+            <ul className="flex flex-grow justify-end flex-wrap gap-5 items-center ">
+              <li ><Link to={`${basePath}/collision`}>Collision</Link></li>
+              <li> <Link to={`${basePath}/accelometer`}>Accelerometer</Link></li>
             </ul>
           </nav>
         </div>
