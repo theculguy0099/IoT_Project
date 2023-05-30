@@ -14,7 +14,7 @@ function AccelarationReadings() {
 
     return (
 
-        <div className="flex flex-col items-center text-center bg-opacity-0 p-2 md:p-5" id="companies_list">
+        <div className="flex flex-col items-center text-center bg-opacity-0 p-2 md:p-20" id="companies_list">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa62ZGlNLl4xw5Z7qc855PYS_6qY2lmzdxE4JlrvaLBQ&usqp=CAU&ec=48665698"/>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400 flex flex-row">
                 Accelaration readings

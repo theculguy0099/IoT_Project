@@ -57,7 +57,7 @@ function HeartrateReadings() {
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-0 text-blue-400">
 
                 {/* Graph code here  */}
-                <iframe style={iframeStyle}  src="https://thingspeak.com/channels/2165919/charts/1?width=auto&height=auto&bgcolor=%23000000&color=%23ffffff&dynamic=true&results=60&type=line&update=15"></iframe>
+                <iframe style={iframeStyle}  src="https://thingspeak.com/channels/2165919/charts/1?width=auto&height=auto&bgcolor=%23ffffff&color=%23ff0000&dynamic=true&results=60&type=line&update=15"></iframe>
 
             </div>
         </div>

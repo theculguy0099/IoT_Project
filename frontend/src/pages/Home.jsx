@@ -255,7 +255,7 @@ function Home() {
             {/* Start of the graphs section */}
 
             {/* First column starts */}
-            <div className="grid md:grid-cols-2 gap-12 p-20">
+            <div className="grid md:grid-cols-2 gap-12 p-5">
               <HeartrateReadings />
               <SpO2Readings />
             </div>
@@ -263,7 +263,7 @@ function Home() {
 
             {/* Second column starts */}
           
-            <div className="flex  p-20">
+            <div className="flex  p-5">
               <AccelarationReadings />
               </div>
             
@@ -272,7 +272,7 @@ function Home() {
 
           {/* Third column starts */}
 
-          <div className="flex  p-20">
+          <div className="flex  p-5">
             <GyroscopeReadings />
           </div>
 
