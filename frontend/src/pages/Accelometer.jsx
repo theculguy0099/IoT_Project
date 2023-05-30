@@ -119,7 +119,7 @@ function Accelometer() {
                     </div>
                     
                     <div>
-                        If a person heart rate value is less than 50 beats per minute ( continously for 5 minutes ) or more than 50 beats per minute ( continously for 5 minutes ), we will send alert  
+                        If a person heart rate value is less than 50 beats per minute ( continously for 5 minutes ) or more than 110 beats per minute ( continously for 5 minutes ), we will send alert  
                     </div>
                 </div>
 
