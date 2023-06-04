@@ -17,16 +17,8 @@ To run the website you need to install npm and node.
 
  ```
  Thing Speak Account details: 
- 
- 1. Write API Key : PMNG1L5KT0RUA91H
- 2. Read API Key : 6CY1XXX88DYVP0PV
- 3. Channel ID: 2160276
- 4. Author: mwa0000030169550
- 5. Access: Private
- 6. User ID: kevin.thakkar@students.iiit.ac.in
- 7. Password:  hiKevin@123
- 8. SJGJJ12DR2RZVE3Y
- 
+ 1. Account: hemanth.sunkireddy@students.iiit.ac.in
+ 2. Password: Iiits@123$
  
  ```
 
