@@ -7,12 +7,14 @@ import fallFront from '../images/ChairFallFront.jpeg';
 import fallBack from '../images/ChairFallBack.jpeg';
 import fallRight from '../images/ChairFallLeft.jpeg';
 import fallLeft from '../images/ChairFallRight.jpeg';
+import HeartRate from '../images/HeartRate.jpeg';
+import Accelerometer from '../images/AccelerometerImage.jpeg';
 
 function Accelometer() {
     return (
         <>
             <Header />
-            <div className="flex flex-col flex-grow items-center justify-center text-center text-4xl md:text-5xl p-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="flex flex-col flex-grow items-center justify-center text-center text-4xl md:text-5xl p-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   ">
                 <div className="md:text-3xl flex flex-col">
                     <div className="p-2 md:text-5xl text-lime-200 font-bold">
                         Acclerometer:
@@ -20,6 +22,25 @@ function Accelometer() {
                     <div className="p-2 text-gray-1000">
                         Enhancing Safety with Smart Wheelchair Technology:
                         Detecting Falls through Coordinate Analysis ( m/sec^2)
+                    </div>
+                    <div className="flex flex-grow items-center text-center justify-center  p-10">
+                        <img src={Accelerometer} alt="Campus Works logo"></img>
+                    </div>
+                    <div className="flex flex-row p-10 gap-10">
+
+                   
+                    <div>
+                        <div className="text-orange-200">
+                            Gyro angle readings 
+                        </div>
+                        Coriolis Effect states that when a mass moves in a particular direction with velocity and an external angular motion is applied to it, a force is generated and that causes a perpendicular displacement of the mass.
+                    </div>
+                    <div>
+                        <div className="text-orange-200">
+                            Accelerometer readings 
+                        </div>
+                        All accelerometers work on the principle of a mass on a spring, when the thing they are attached to accelerates, then the mass wants to remain stationary due to its inertia and therefore the spring is stretched or compressed, creating a force which is detected and corresponds to the applied acceleration.
+                        </div>
                     </div>
                     <div className="flex flex-col p-2">
                         <div className="text-orange-300 font-bold">
@@ -114,12 +135,20 @@ function Accelometer() {
                     <div className="p-2">
                         Enhancing Healthcare with IoT: Real-time Pulse Rate Monitoring and Alert System
                     </div>
-                    <div className="p-2">
+                    <div className="p-2 text-orange-200">
                         Detection of Heart rate and SPO2 values
                     </div>
-                    
                     <div>
                         If a person heart rate value is less than 50 beats per minute ( continously for 5 minutes ) or more than 110 beats per minute ( continously for 5 minutes ), we will send alert  
+                        The pulse oximeter uses a cold light source that shines a light through the fingertip, making the tip appear to be red. By analyzing the light from the light source that passes through the finger, the device is able to determine the percentage of oxygen in the red blood cell.
+                    </div>
+                    <div className="flex flex-row items-center justify-center ">
+                        <img src={HeartRate} className="d-inline-block align-top" alt="Campus Works logo"></img>
+                        If a person heart rate value is less than 50 beats per minute ( continously for 5 minutes ) or more than 100 beats per minute ( continously for 5 minutes ), Oxygen level is level than 90% or for High or Low BP, we can alert.
+                    </div>
+                    
+                    <div className="grid md:grid-2">
+                         
                     </div>
                 </div>
 

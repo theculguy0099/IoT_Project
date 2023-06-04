@@ -8,6 +8,12 @@ import fallFront from '../images/ChairFallFront.jpeg';
 import fallBack from '../images/ChairFallBack.jpeg';
 import fallRight from '../images/ChairFallLeft.jpeg';
 import fallLeft from '../images/ChairFallRight.jpeg';
+import Project_1 from '../images/Project_1.jpeg';
+import Project_2 from '../images/Project_2.jpeg';
+import Project_3 from '../images/Project_3.jpeg';
+import Project_4 from '../images/Project_4.jpeg';
+
+
 
 
 
@@ -15,7 +21,7 @@ function CollisionStop() {
     return (
         <>
             <Header />
-            <div className="flex flex-col flex-grow items-center justify-center text-center text-3xl md:text-3xl p-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="flex flex-col flex-grow items-center justify-center text-center text-3xl md:text-3xl p-40 ">
                 <div className="p-2">
                     Ultrasonic sensors and Joystick
                 </div>
@@ -23,43 +29,37 @@ function CollisionStop() {
                     <div className="grid md:grid-cols-2 gap-12 p-20">
                         <div>
                             Joystick-controlled wheelchair with ultrasonic obstacle detection ensures safe navigation.
+                            Intuitive joystick control and 10cm range obstacle detection enhance wheelchair safety.
                         </div>
                         <div>
-                            Intuitive joystick control and 10cm range obstacle detection enhance wheelchair safety.
+                            
+                        
+                        The ultrasound sensor sends ultrasound waves via trigger pin and wait for a time period for echo pin to recieve the reflection of it. <br />Depending on the time duration it calculates the distance from nearest hard surface.
+                            In our model when the distance detected is less than 10cm the model is blocked to move any further even if joystick is turned in that direction
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-row flex-grow p-40 gap-10">
                     <div className="flex flex-col">
                         <div>
-                            <img src={fallLeft} alt="Campus Works logo"></img>
-                        </div>
-                        <div className="md:text-3xl font-3xl flex flex-col items-center p-10">
-                            Quaternary content 
+                            <img src={Project_1} alt="Campus Works logo"></img>
                         </div>
                     </div>
                     <div >
-                        <div><img src={fallRight} alt="Campus Works logo"></img></div>
-                        <div className="md:text-3xl font-3xl flex flex-col items-center p-10">
-                           Teritary content 
-                        </div>
+                        <div><img src={Project_2} alt="Campus Works logo"></img></div>
                     </div>
                     <div>
                         <div>
-                            <img src={fallFront} alt="Campus Works logo"></img>
+                            <img src={Project_3} alt="Campus Works logo"></img>
                         </div>
-                        <div className="md:text-3xl font-3xl flex flex-col items-center p-10">
-                          Secondary Content
-                        </div>
+                       
                     </div>
                     <div>
                         
                         <div>
-                            <img src={fallBack} className="d-inline-block align-top" alt="Campus Works logo"></img>
+                            <img src={Project_4} className="d-inline-block align-top" alt="Campus Works logo"></img>
                         </div>
-                        <div className="md:text-3xl font-3xl flex flex-col items-center p-10">
-                            Content 
-                        </div>
+                        
                     </div>
                 </div>
                 

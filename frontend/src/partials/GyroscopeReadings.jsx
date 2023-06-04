@@ -17,6 +17,7 @@ function GyroscopeReadings() {
 
         <div className="flex flex-col items-center text-center bg-opacity-0 p-2 md:p-20" id="tasks_list">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5pJPqsCLO1eNrn19tkEidb8vaXfMLvx25f3QydLoug&usqp=CAU&ec=48665698"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5pJPqsCLO1eNrn19tkEidb8vaXfMLvx25f3QydLoug&usqp=CAU&ec=48665698" />
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400">
                 Gyroscope Readings
             </div>
@@ -28,10 +29,10 @@ function GyroscopeReadings() {
                     <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
                 <div>
-                    <iframe style={iframeStyle}  src="https://thingspeak.com/channels/2165912/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
             </div>
-            
+
         </div>
     );
 }

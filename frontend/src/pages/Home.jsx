@@ -11,7 +11,8 @@ import GyroscopeReadings from "../partials/GyroscopeReadings";
 import AccelarationReadings from "../partials/AccelometerReadings";
 import RotationsPerMinuteReadings from "../partials/RotationsPerMinute";
 import VelocityOfChairReadings from "../partials/VelocityOfChair";
-
+import SystoleReadings from "../partials/SystoleReadings";
+import DiastoleReadings from "../partials/DiastoleReadings";
 
 
 
@@ -90,7 +91,7 @@ function Home() {
 
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div className="flex flex-col min-h-screen overflow-hidden ">
 
       {/*  Site header */}
       <Header />
@@ -225,14 +226,14 @@ function Home() {
                   </div>
                   <div className="max-w-xs max-auto sm:max-w-none text-gray-900">
                     <p className="text-2.5xl md:text-2xl">
-                    The IoT-based smart wheelchair project aims 
-                    to enhance the lives of wheelchair users by 
-                    providing a comprehensive mobility solution. 
-                    It focuses on improving independence, autonomy, 
-                    and overall quality of life. Through IoT technology, t
-                    he smart wheelchair enables remote control, 
-                    integrates with smart devices, and incorporates 
-                    advanced sensors for safety. 
+                      The IoT-based smart wheelchair project aims
+                      to enhance the lives of wheelchair users by
+                      providing a comprehensive mobility solution.
+                      It focuses on improving independence, autonomy,
+                      and overall quality of life. Through IoT technology, t
+                      he smart wheelchair enables remote control,
+                      integrates with smart devices, and incorporates
+                      advanced sensors for safety.
                     </p>
                   </div>
                 </div>
@@ -249,10 +250,10 @@ function Home() {
             {/* Here We can change to the componenets form so that we can view the code clearly */}
 
           </div>
-              {/* Upto Here the content of the page done  */}
+          {/* Upto Here the content of the page done  */}
 
 
-            {/* Start of the graphs section */}
+          {/* Start of the graphs section */}
 
             {/* First column starts */}
             <div className="grid md:grid-cols-2 gap-12 p-5">
@@ -267,8 +268,21 @@ function Home() {
               <AccelarationReadings />
               </div>
             
+          {/* First column starts */}
+          <div className="grid md:grid-cols-2 gap-12 p-5">
+            <HeartrateReadings />
+            <SpO2Readings />
+          </div>
+          {/* First column ends */}
+
+          {/* Second column starts */}
+
+          <div className="flex  p-5">
+            <AccelarationReadings />
+          </div>
+
           {/* Second column ends */}
-          
+
 
           {/* Third column starts */}
 
@@ -278,19 +292,27 @@ function Home() {
 
           {/* Third column ends */}
 
-            {/* Fourth column starts */}
-            <div className="flex justify-center items-center text-center p-20">
-              <TemperatureReadings />
-            </div>
-            {/* Fourth column ends */}
+          {/* Fourth column starts */}
+          <div className="flex justify-center items-center text-center p-20">
+            <TemperatureReadings />
+          </div>
+          {/* Fourth column ends */}
+
+          {/* Fifth column starts */}
+          <div className="flex justify-center items-center text-center p-20">
+            <SystoleReadings />
+          </div>
+          {/* Fifth column ends */}
+
+          <div className="flex justify-center items-center text-center p-20">
+            <DiastoleReadings />
+          </div>
 
 
-            
+          {/* End of the graphs section */}
 
-            {/* End of the graphs section */}
+          <br /><br /><br /><br /><br /><br /><br />
 
-            <br /><br /><br /><br /><br /><br /><br />
-          
         </section>
 
       </main>
