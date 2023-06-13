@@ -1,75 +1,54 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-
 import Footer from '../partials/Footer';
 
-import fallFront from '../images/ChairFallFront.jpeg';
-import fallBack from '../images/ChairFallBack.jpeg';
-import fallRight from '../images/ChairFallLeft.jpeg';
-import fallLeft from '../images/ChairFallRight.jpeg';
-import Project_1 from '../images/Project_1.jpeg';
-import Project_2 from '../images/Project_2.jpeg';
-import Project_3 from '../images/Project_3.jpeg';
-import Project_4 from '../images/Project_4.jpeg';
+import Header from '../partials/Header';
 
+function CollisionStop(){
 
-
-
-
-function CollisionStop() {
-    return (
-        <>
+return (
+        <div>
             <Header />
-            <div className="flex flex-col flex-grow items-center justify-center text-center text-3xl md:text-3xl p-40 ">
-                <div className="p-2">
-                    Ultrasonic sensors and Joystick
-                </div>
-                <div>
-                    <div className="grid md:grid-cols-2 gap-12 p-20">
-                        <div>
-                            Joystick-controlled wheelchair with ultrasonic obstacle detection ensures safe navigation.
-                            Intuitive joystick control and 10cm range obstacle detection enhance wheelchair safety.
-                        </div>
-                        <div>
-                            
-                        
-                        The ultrasound sensor sends ultrasound waves via trigger pin and wait for a time period for echo pin to recieve the reflection of it. <br />Depending on the time duration it calculates the distance from nearest hard surface.
-                            In our model when the distance detected is less than 10cm the model is blocked to move any further even if joystick is turned in that direction
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-row flex-grow p-40 gap-10">
-                    <div className="flex flex-col">
-                        <div>
-                            <img src={Project_1}></img>
-                        </div>
-                    </div>
-                    <div >
-                        <div><img src={Project_2}></img></div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src={Project_3}></img>
-                        </div>
-                       
-                    </div>
-                    <div>
-                        
-                        <div>
-                            <img src={Project_4} className="d-inline-block align-top" alt="Campus Works logo"></img>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div className="flex flex-col items-center justify-center text-center text-4xl md:text-5xl p-40">
                 
+                <div className="flex flex-col flex-grow gap-10 md:text-3xl bg-green-400" data-aos="zoom-y-out"
+                  data-aos-delay="300">
+                    <div className="p-2 md:text-5xl font-bold ">
+                        Oxiometer
+                    </div>
+                    <div className=" flex p-10 items-center text-center justify-center">
+                    
+                    </div>
+                
+                    
 
+                <div className="flex items-center flex-col md:flex-row justify-center p-4 mx-auto md:mt-10 pt-5"
+                  
+                >
+                  <div className="px-20 pb-30">
+                    <h1
+                      className="text-5xl md:text-4xl font-extrabold leading-tightertracking-tighter mb-4"
+                      data-aos="zoom-y-out"
+                    >
+                      Enhancing Collision {" "}
+                      <span className="bg-clip-text text-transparent text-blue-500">
+                        Detection System
+                      </span>
+                    </h1>
+                  </div>
+                  <div className="max-w-xs max-auto sm:max-w-none text-gray-900">
+                    <p className="text-2.5xl md:text-2xl px-20 pb-30">
+                      Real time obstacle detection system and alerting system if person is going to collide then wheel chair stops 
+                      to provide safety 
+                    </p>
+                  </div>
+                </div>
+                <hr />
             </div>
-
-
             <Footer />
+        </div>
+        </div>
 
-        </>
     );
 }
 

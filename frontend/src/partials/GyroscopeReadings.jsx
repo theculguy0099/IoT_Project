@@ -25,13 +25,13 @@ function GyroscopeReadings() {
             </div>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400 flex flex-row">
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/4?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/4?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/5?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/5?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
                 <div>
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/6?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/6?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
             </div>
 

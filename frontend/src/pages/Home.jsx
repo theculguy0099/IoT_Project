@@ -207,6 +207,16 @@ function Home() {
               <AccelarationReadings />
               </div>
             
+            {/* Second column ends */}
+
+            {/* Fifth column starts */}
+          <div className="grid md:grid-cols-2 gap-12 p-5">
+            <SystoleReadings />
+            <DiastoleReadings />
+
+          </div>
+          {/* Fifth column ends */}
+            
           
 
           {/* Third column starts */}
@@ -219,16 +229,20 @@ function Home() {
 
           
 
-          {/* Fifth column starts */}
+          
+
+
+        
+
+          {/* Fourth column starts */}
           <div className="grid md:grid-cols-2 gap-12 p-5">
-            <SystoleReadings />
-            <DiastoleReadings />
+            <RotationsPerMinuteReadings />
+            <VelocityOfChairReadings />
 
           </div>
-          {/* Fifth column ends */}
+          {/* Fourth column ends */}
 
-
-        {/* Fourth column starts */}
+          {/* Fourth column starts */}
         <div className="flex justify-center items-center text-center p-20">
             <TemperatureReadings />
           </div>

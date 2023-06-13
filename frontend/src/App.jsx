@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import NotFound from "./pages/404";
 import Accelometer from "./pages/Accelometer";
 import CollisionStop from "./pages/CollisonStop";
+import Oxiometer from "./pages/Oxiometer";
+import Emergency from "./pages/emergency";
 
 function App() {
   const location = useLocation();
@@ -37,6 +39,9 @@ function App() {
         <Route exact path={`${basePath}/*`} element={<NotFound />} />
         <Route exact path={`${basePath}/accelometer`} element={<Accelometer />} />
         <Route exact path={`${basePath}/collision`} element={<CollisionStop />} />
+        <Route exact path={`${basePath}/oxiometer`} element={<Oxiometer />} />
+        <Route exact path={`${basePath}/emergency`} element={<Emergency />} />
+
       </Routes>
     </>
   );

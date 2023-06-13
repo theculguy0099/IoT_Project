@@ -24,7 +24,7 @@ function SpO2Readings() {
             </div>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-0 text-blue-400">
 
-                <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165919/charts/2?dynamic=true&results=60&type=line&update=15"></iframe>
+                <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165919/charts/2?dynamic=true&results=200&type=line&update=15"></iframe>
                 
 
             </div>

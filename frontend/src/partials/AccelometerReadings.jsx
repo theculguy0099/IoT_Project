@@ -23,13 +23,13 @@ function AccelarationReadings() {
             </div>
             <div className="md:text-3xl text-2xl font-bold pb-10 pt-12 text-blue-400 flex flex-row">
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/1?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/1?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
                 <div className="md:text-3xl text-2xl font-bold pr-10">
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/2?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/2?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
                 <div>
-                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/3?dynamic=true&results=60&type=line&update=15"></iframe>
+                    <iframe style={iframeStyle} src="https://thingspeak.com/channels/2165912/charts/3?dynamic=true&results=200&type=line&update=15"></iframe>
                 </div>
             </div>
 

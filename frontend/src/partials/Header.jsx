@@ -85,8 +85,11 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow ">
             <ul className="flex flex-grow justify-end flex-wrap gap-5 items-center ">
-              <li ><Link to={`${basePath}/collision`}>Collision</Link></li>
+              {/* <li ><Link to={`${basePath}/collision`}>Ultrasonic</Link></li> */}
+              <li><Link to={`${basePath}/oxiometer`}>Oxiometer</Link></li>
               <li> <Link to={`${basePath}/accelometer`}>Accelerometer</Link></li>
+              <li> <Link to={`${basePath}/emergency`}>Emergency</Link></li>
+
             </ul>
           </nav>
         </div>
