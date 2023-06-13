@@ -17,67 +17,6 @@ import DiastoleReadings from "../partials/DiastoleReadings";
 
 
 
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
-
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-export const options = {
-  indexAxis: "y",
-  elements: {
-    bar: {
-      borderWidth: 2
-    }
-  },
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "right",
-    },
-    title: {
-      display: true,
-      text: "Chart.js Horizontal Bar Chart"
-    }
-  }
-};
-
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
-
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: "Dataset 1",
-
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)"
-    },
-    {
-      label: "Dataset 2",
-      borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)"
-    }
-  ]
-};
-
-
-
 
 
 function Home() {
@@ -91,7 +30,7 @@ function Home() {
 
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden ">
+    <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
       <Header />
@@ -100,7 +39,7 @@ function Home() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <section className="relative">
+        <section className="relative ">
           {/* Illustration behind hero content */}
           <div
             className="absolute left-1/2 transform -translate-x-1/2  pointer-events-none"
@@ -134,7 +73,7 @@ function Home() {
             </svg>
           </div>
 
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
             {/* Hero content */}
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
               {/* Hero image */}
@@ -254,9 +193,9 @@ function Home() {
 
 
           {/* Start of the graphs section */}
-
+          <div className="p-20">
             {/* First column starts */}
-            <div className="grid md:grid-cols-2 gap-12 p-5">
+            <div className="grid md:grid-cols-2 gap-20 p-2">
               <HeartrateReadings />
               <SpO2Readings />
             </div>
@@ -268,21 +207,7 @@ function Home() {
               <AccelarationReadings />
               </div>
             
-          {/* First column starts */}
-          <div className="grid md:grid-cols-2 gap-12 p-5">
-            <HeartrateReadings />
-            <SpO2Readings />
-          </div>
-          {/* First column ends */}
-
-          {/* Second column starts */}
-
-          <div className="flex  p-5">
-            <AccelarationReadings />
-          </div>
-
-          {/* Second column ends */}
-
+          
 
           {/* Third column starts */}
 
@@ -292,24 +217,27 @@ function Home() {
 
           {/* Third column ends */}
 
-          {/* Fourth column starts */}
-          <div className="flex justify-center items-center text-center p-20">
-            <TemperatureReadings />
-          </div>
-          {/* Fourth column ends */}
+          
 
           {/* Fifth column starts */}
-          <div className="flex justify-center items-center text-center p-20">
+          <div className="grid md:grid-cols-2 gap-12 p-5">
             <SystoleReadings />
+            <DiastoleReadings />
+
           </div>
           {/* Fifth column ends */}
 
-          <div className="flex justify-center items-center text-center p-20">
-            <DiastoleReadings />
+
+        {/* Fourth column starts */}
+        <div className="flex justify-center items-center text-center p-20">
+            <TemperatureReadings />
           </div>
+          {/* Fourth column ends */}
+          
 
 
           {/* End of the graphs section */}
+          </div>
 
           <br /><br /><br /><br /><br /><br /><br />
 

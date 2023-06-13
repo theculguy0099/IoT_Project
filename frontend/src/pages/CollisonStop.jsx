@@ -42,15 +42,15 @@ function CollisionStop() {
                 <div className="flex flex-row flex-grow p-40 gap-10">
                     <div className="flex flex-col">
                         <div>
-                            <img src={Project_1} alt="Campus Works logo"></img>
+                            <img src={Project_1}></img>
                         </div>
                     </div>
                     <div >
-                        <div><img src={Project_2} alt="Campus Works logo"></img></div>
+                        <div><img src={Project_2}></img></div>
                     </div>
                     <div>
                         <div>
-                            <img src={Project_3} alt="Campus Works logo"></img>
+                            <img src={Project_3}></img>
                         </div>
                        
                     </div>
