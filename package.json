@@ -4,7 +4,7 @@
   "homepage": "https://hemanth-sunkireddy.github.io/IoT_Project",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "deploy": "gh-pages -b master -d build",
     "preview": "vite preview"
   },
   "dependencies": {
